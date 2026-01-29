@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Wildfire Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive web application that displays **real-time wildfire events**
+using data from the **NASA EONET API**, visualized on an interactive map.
 
-## Available Scripts
+This project allows users to explore active wildfires, view their locations,
+and access detailed event information directly on the map.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Preview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Wildfire Map](screenshots/map.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Wildfire Info](screenshots/wildfire-info.png)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##  Features
+-  Interactive map displaying wildfire locations
+-  Real-time wildfire data from NASA (EONET API)
+-  Clickable markers with detailed event information
+-  Loading indicator while data is being fetched
+-  Responsive and user-friendly interface
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##  Tech Stack
+- **Frontend:** React
+- **APIs:** NASA EONET API, Google Maps API
+- **Languages:** JavaScript, HTML, CSS
+- **Tools:** Git, GitHub
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation & Setup
 
-### `npm run eject`
+### Clone the repository
+```bash
+git clone https://github.com/marcosvfigueiroa/wildfire-tracker.git
+cd wildfire-tracker
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Create a file named key.env in the project root and add:
+```bash
+  REACT_APP_GOOGLE_MAPS_API_KEY=your_api_key_here
+```
+- Install dependencies
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Run the application
+```bash
+  npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- The app will be available at: http://localhost:3000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Author
 
-## Learn More
+**Marcos Figueirôa**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- IT student in *Techniques de l’informatique* at Cégep de Valleyfield  
+- Québec, Canada  
+- Interested in software development, APIs, and databases  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🔗 **GitHub:** https://github.com/marcosvfigueiroa  
+🔗 **LinkedIn:** https://www.linkedin.com/in/marcos-figueiroa
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
